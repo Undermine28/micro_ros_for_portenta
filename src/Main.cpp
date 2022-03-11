@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <LwIP.h>
+#include <LwIP.h> // lightweight TCP/IP protocol suite
 #include <STM32Ethernet.h>
 #include <STM32FreeRTOS.h>
 #include <micro_ros_arduino.h>
@@ -9,6 +9,8 @@
 #include <rclc/executor.h>
 #include <rclc/rclc.h>
 #include <std_msgs/msg/string.h>
+
+//#include <EthernetInterface.h> //This doesn't include the required tools
 
 #define CLIENT_IP "192.168.1.177"
 #define AGENT_IP "192.168.1.176"
